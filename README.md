@@ -10,8 +10,8 @@ RMD combines:
 - An SE(3)-equivariant diffusion model over 3D coordinates
 - A kinematic loop refiner for geometric cleanup
 
-The codebase is organized for use on a single GPU (e.g., Kaggle) and multi-GPU
-HPC clusters.
+Data preprocessing done on kaggle datasets
+Training is organized for debugging on a single GPU (Kaggle, or locally) and training on multi-GPU HPC clusters.
 
 ---
 
