@@ -1,16 +1,15 @@
 # RNA-Motif-Diffuser (RMD)
 
-RNA-Motif-Diffuser (RMD) is a hybrid CNN–Transformer–diffusion architecture for
-learning RNA sequence–structure relationships from large-scale datasets.
-
-RMD combines:
+This is a hybrid CNN–Transformer–diffusion architecture for learning RNA sequence–structure relationships from large-scale datasets. RMD combines:
 
 - A 1D CNN + Transformer encoder for sequence and motif-aware embeddings
 - An Evoformer-style pairwise interaction module for long-range contacts
 - An SE(3)-equivariant diffusion model over 3D coordinates
 - A kinematic loop refiner for geometric cleanup
 
-Data preprocessing done on kaggle datasets
+The data preprocessing script was executed using a kaggle dataset: https://www.kaggle.com/datasets/jaejohn/rna-all-data
+Originally provided by Professor Rhiju Das and filtered by kaggle user John G Rao (@jaejohn) as part of the Stanford 3D RNA folding competition
+
 Training is organized for debugging on a single GPU (Kaggle, or locally) and training on multi-GPU HPC clusters.
 
 ---
@@ -24,16 +23,3 @@ Training is organized for debugging on a single GPU (Kaggle, or locally) and tra
 - Single-GPU and multi-GPU (DDP) support
 - Modular design for ablations and extension
 
----
-
-## Installation
-
-```bash
-git clone https://github.com/<your-username>/rna-motif-diffuser.git
-cd rna-motif-diffuser
-
-# Recommended: create a virtual environment
-python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-
-pip install -r requirements.txt
