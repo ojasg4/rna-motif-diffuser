@@ -7,8 +7,9 @@ This is a hybrid CNN–Transformer–diffusion architecture for learning RNA seq
 - An SE(3)-equivariant diffusion model over 3D coordinates
 - A kinematic loop refiner for geometric cleanup
 
-The data preprocessing script was executed using a kaggle dataset: https://www.kaggle.com/datasets/jaejohn/rna-all-data
-Originally provided by Professor Rhiju Das and filtered by kaggle user John G Rao (@jaejohn) as part of the Stanford 3D RNA folding competition
+The data preprocessing script was executed using a kaggle dataset: https://www.kaggle.com/datasets/jaejohn/rna-all-data.
+
+Originally provided by Professor Rhiju Das and filtered by kaggle user John G Rao (@jaejohn) as part of the Stanford 3D RNA folding competition.
 
 Training is organized for debugging on a single GPU (Kaggle, or locally) and training on multi-GPU HPC clusters.
 
