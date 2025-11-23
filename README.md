@@ -20,7 +20,6 @@ Training is organized for debugging on a single GPU (Kaggle, or locally) and tra
 - Motif-aware sequence encoder (CNN + Transformer)
 - Evoformer-inspired pair representation
 - SE(3)-equivariant diffusion over 3D coordinates
-- Optional coordinate normalization and recentering
+- Coodrinate normalization and recentering, not implemented for now
 - Single-GPU and multi-GPU (DDP) support
-- Modular design for ablations and extension
 
